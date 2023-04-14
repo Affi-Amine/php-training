@@ -8,9 +8,14 @@
 </head>
 <body>
     <form action="index.php" method="post">
-        <label for="quantity">Quantity</label><br />
-        <input type="text">
+        <label>Quantity</label><br />
+        <input type="text" name="quantity">
         <input type="submit" value="total">
     </form>
 </body>
 </html>
+<?php
+    $price = 5;
+    $quantity = $_POST["quantity"];
+    echo "{$price} * {$quantity}" ;
+?>
